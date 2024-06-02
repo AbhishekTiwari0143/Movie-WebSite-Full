@@ -5,7 +5,7 @@ const RealTimeCard = () => {
   const { data: visitors } = useGetUsersQuery();
 
   return (
-    <div className="w-[30rem] mt-10 bg-[#282828] text-[#fff] rounded-lg shadow-lg p-4">
+    <div className=" mt-10 bg-[#282828] text-[#fff] rounded-lg shadow-lg p-4">
       <h2 className="text-2xl font-bold mb-2">Relal time</h2>
       <p className="text-gray-500 mb-4">Update Live</p>
       <div className="border-t border-[#666] mb-7"></div>

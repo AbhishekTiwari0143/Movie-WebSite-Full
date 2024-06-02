@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <section className="relative mt-[10rem]">
+      <section className="relative w-screen mt-[10rem]">
         <MoviesContainerPage />
       </section>
     </>

@@ -20,8 +20,8 @@ const Main = () => {
   );
 
   return (
-    <div>
-      <section className="flex justify-around">
+    <div className="w-[100%]">
+      <section className="flex justify-around w-[80%] pl-[5%]">
         <div className="ml-[14rem] mt-10">
           <div className="-translate-x-4 flex">
             <SecondaryCard

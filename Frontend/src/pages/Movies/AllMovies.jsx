@@ -75,11 +75,11 @@ const AllMovies = () => {
   };
 
   return (
-    <div className="grid  w-full pb-40  gap-4 -translate-y-[5rem]">
+    <div className="grid w-full pb-40 gap-4 -translate-y-[5rem]">
       <>
         <section>
           <div
-            className="relative h-[40rem] w-full mb-10 flex items-center justify-center bg-cover"
+            className="h-[40rem] -z-10 w-screen mb-10 flex flex-col gap-20 items-center justify-center bg-cover"
             style={{ backgroundImage: `url(${banner})` }}
           >
             <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-black opacity-60"></div>
@@ -90,10 +90,10 @@ const AllMovies = () => {
                 Cinematic Odyssey: Unveiling the Magic of Movies
               </p>
             </div>
-            <section className="absolute -bottom-[5rem]">
+            <section className="relative z-10">
               <input
                 type="text"
-                className="w-[100%] h-[5rem] border px-10 outline-none rounded"
+                className="w-[100%] h-[4rem] border px-8 outline-none rounded text-2xl"
                 placeholder="Search Movie"
                 value={moviesFilter.searchTerm}
                 onChange={handleSearchChange}
