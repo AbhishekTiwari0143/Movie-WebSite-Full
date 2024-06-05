@@ -6,8 +6,8 @@ const MovieTabs = ({ userInfo, submitHandler, comment, setComment, movie }) => {
       <section>
         {userInfo ? (
           <form onSubmit={submitHandler}>
-            <div className="my-2">
-              <label htmlFor="comment" className="block text-xl mb-2">
+            <div className="my-2 flex flex-col md:flex-row gap-4">
+              <label htmlFor="comment" className="MovieTabs block text-xl mb-2">
                 Write your Review
               </label>
               <textarea
@@ -41,7 +41,7 @@ const MovieTabs = ({ userInfo, submitHandler, comment, setComment, movie }) => {
           {movie?.reviews.map((review) => (
             <div
               key={review._id}
-              className="bg-[#1A1A1A] p-4 rounded-lg w-[50%] mt-[2rem]"
+              className="bg-[#1A1A1A] p-4 rounded-lg w-[80%] mt-[2rem]"
             >
               <div className="flex justify-between">
                 <strong className="text-[#B0B0B0]">{review.name}</strong>

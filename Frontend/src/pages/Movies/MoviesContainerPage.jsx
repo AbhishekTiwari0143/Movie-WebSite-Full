@@ -25,8 +25,8 @@ const MoviesContainerPage = () => {
   );
 
   return (
-    <div className="w-full flex flex-col lg:flex-row lg:justify-between items-center">
-      <nav className=" ml-[4rem] flex flex-row xl:flex-col lg:flex-col md:flex-row sm:flex-row">
+    <div className="MoviesContainerPage w-full flex flex-col lg:flex-row lg:justify-between items-center">
+      <nav className=" sm:ml-[4rem] flex flex-row xl:flex-col lg:flex-col md:flex-row sm:flex-row">
         {genres?.map((g) => (
           <button
             key={g._id}
@@ -41,7 +41,7 @@ const MoviesContainerPage = () => {
       </nav>
 
       <section className="flex flex-col justify-center items-center w-[80%]">
-        <div className="w-[85%] mb-8 ">
+        <div className="w-[85%] mb-8">
           <h1 className="mb-5">Choose For You</h1>
           <SliderUtil data={randomMovies} />
         </div>

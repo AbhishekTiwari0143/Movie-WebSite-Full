@@ -5,11 +5,11 @@ import SliderUtil from "../../component/SliderUtil";
 const Header = () => {
   const { data } = useGetNewMoviesQuery();
   return (
-    <div className="flex flex-col mt-[2rem] ml-[2rem] md:flex-row justify-between items-center md:items-start">
+    <div className="Header overflow-hidden flex flex-col mt-[2rem] ml-[2rem] md:flex-row justify-between items-center md:items-start">
       <nav className="w-full md:w-[10rem] ml-0 md:ml-2 mb-4 md:mb-0">
         <Link
           to="/"
-          className="transition duration-300 ease-in-out hover:bg-teal-200  block p-2 rounded mb-1 md:mb-2 text-lg"
+          className="transition duration-300 ease-in-out hover:bg-teal-200  block p-2 rounded mb-1 md:mb-2 text-lg hover:text-black hover:font-medium"
         >
           Home
         </Link>

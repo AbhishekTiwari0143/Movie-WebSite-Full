@@ -37,34 +37,35 @@ const MovieDetails = () => {
 
   return (
     <>
-      <div>
-        <Link
-          to="/"
-          className="text-white font-semibold hover:underline ml-[20rem]"
-        >
-          Go Back
-        </Link>
-      </div>
-
-      <div className="mt-[2rem] mb-40">
+      <div className="MovieDetails mt-[2rem] mb-40">
+        <div className="mb-4">
+          <Link
+            to="/"
+            className="text-white font-semibold hover:underline ml-[4rem] sm:ml-[20rem]"
+          >
+            Go Back
+          </Link>
+        </div>
         <div className="flex justify-center items-center">
           <img
             src={movie?.image}
             alt={movie?.name}
-            className="w-[70%] rounded"
+            className="w-[80%] sm:w-[20%] rounded"
           />
         </div>
         {/* Container one  */}
-        <div className="container flex justify-between ml-[12rem] mt-[3rem]">
+        <div className="container w-[80%] md:w-full flex justify-between flex-col md:flex-row mt-[3rem] ml-4 md:ml-16">
           <section>
-            <h2 className="text-5xl my-4 font-extrabold">{movie?.name}</h2>
-            <p className="my-4 xl:w-[35rem] lg:w-[35rem] md:w-[30rem] text-[#B0B0B0]">
+            <h2 className="text-4xl md:text-5xl my-4 font-extrabold">
+              {movie?.name}
+            </h2>
+            <p className="my-4 xl:w-[35rem] lg:w-[35rem] md:w-[30rem]  text-[#B0B0B0]">
               {movie?.detail}
             </p>
           </section>
           <div className="mr-[5rem]">
             <p className="text-2xl font-semibold">
-              Realasing Date: {movie?.year}
+              Releasing Date: {movie?.year}
             </p>
 
             <div>
@@ -76,7 +77,7 @@ const MovieDetails = () => {
             </div>
           </div>
         </div>
-        <div className="container ml-[20rem]">
+        <div className="container items-center w-[80%] m-auto ml-4 md:ml-16">
           <MovieTabs
             loadingMovieReview={loadingMovieReview}
             userInfo={userInfo}
